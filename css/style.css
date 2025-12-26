@@ -1585,43 +1585,146 @@ a:focus-visible {
     .christmas-day {
         min-height: 60vh;
     }
+    
+    .gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 300px;
+    }
 }
 
 /* Mobile - Tablets pequenos e celulares grandes */
 @media (max-width: 768px) {
     :root {
-        --space-lg: 2rem;
+        --space-sm: 0.75rem;
+        --space-md: 1.5rem;
+        --space-lg: 2.5rem;
         --space-xl: 3rem;
     }
     
     html {
-        font-size: 14px;
+        font-size: 15px;
     }
     
-    .intro-screen-content h1 {
+    /* Intro Screen */
+    .intro-date .day {
+        font-size: 4rem;
+    }
+    
+    .date-details .month {
+        font-size: 1rem;
+    }
+    
+    .date-details .year {
+        font-size: 1.5rem;
+    }
+    
+    .intro-title .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .intro-family {
+        font-size: 1.6rem;
+    }
+    
+    .enter-btn {
+        padding: 0.875rem 2rem;
+        font-size: 0.8rem;
+    }
+    
+    /* Navigation */
+    .main-nav {
+        padding: 1rem;
+    }
+    
+    .nav-brand {
+        font-size: 1.4rem;
+    }
+    
+    /* Hero */
+    .hero-inner {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .hero-eyebrow {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .hero-headline {
+        font-size: 2.2rem;
+    }
+    
+    .hero-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    .hero-stats {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-md);
+    }
+    
+    .stat-item {
+        display: flex;
+        align-items: baseline;
+        gap: 0.75rem;
+    }
+    
+    .stat-value {
         font-size: 2.5rem;
     }
     
-    .intro-family-name {
-        font-size: 1.5rem;
+    .stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .stat-divider {
+        display: none;
+    }
+    
+    /* Section Intro */
+    .section-intro {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .section-number {
+        font-size: 0.8rem;
+    }
+    
+    .section-title-main {
+        font-size: 2.2rem;
+    }
+    
+    .section-description {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+    
+    /* Timeline */
+    .timeline-container {
+        padding: 0 var(--space-sm);
     }
     
     .week-header {
         flex-direction: column;
         align-items: flex-start;
         gap: 0.5rem;
+        padding: var(--space-sm) 0;
     }
     
     .week-label {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
     
     .week-dates {
-        font-size: 0.8rem;
+        font-size: 0.75rem;
     }
     
+    /* Moment Cards - Full Width */
     .pre-christmas {
         grid-template-columns: 1fr;
+        gap: var(--space-md);
     }
     
     .moment-card.horizontal {
@@ -1629,52 +1732,137 @@ a:focus-visible {
     }
     
     .moment-card.horizontal .moment-media {
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/10;
     }
     
+    .moment-card .moment-content {
+        padding: var(--space-md);
+    }
+    
+    .moment-tag {
+        font-size: 0.65rem;
+    }
+    
+    .moment-title {
+        font-size: 1.3rem;
+    }
+    
+    .moment-description {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .moment-date-badge {
+        padding: 0.4rem 0.6rem;
+    }
+    
+    .badge-day {
+        font-size: 1.3rem;
+    }
+    
+    .badge-month {
+        font-size: 0.6rem;
+    }
+    
+    /* Christmas Eve */
     .christmas-eve {
         grid-template-columns: 1fr;
     }
     
     .christmas-eve-media {
-        aspect-ratio: 16/9;
+        aspect-ratio: 16/10;
+    }
+    
+    .christmas-eve-media .media-overlay {
+        background: linear-gradient(180deg, transparent, var(--color-darker));
     }
     
     .christmas-eve-content {
         padding: var(--space-md);
     }
     
+    .eve-date {
+        margin-bottom: var(--space-sm);
+    }
+    
     .eve-day {
-        font-size: 2.5rem;
+        font-size: 3rem;
+    }
+    
+    .eve-label {
+        font-size: 0.75rem;
     }
     
     .eve-title {
         font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
     
+    .eve-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    /* Christmas Day */
     .christmas-day {
-        min-height: 70vh;
+        min-height: 500px;
     }
     
-    .christmas-title {
-        font-size: 1.8rem;
+    .christmas-badge {
+        padding: 0.5rem 1rem;
+    }
+    
+    .badge-icon {
+        font-size: 0.85rem;
+    }
+    
+    .badge-text {
+        font-size: 0.7rem;
     }
     
     .christmas-content {
-        padding: var(--space-lg);
+        padding: var(--space-md);
+    }
+    
+    .christmas-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.2em;
+    }
+    
+    .christmas-title {
+        font-size: 1.6rem;
+        margin-bottom: var(--space-sm);
+    }
+    
+    .christmas-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    .signature-text {
+        font-size: 0.8rem;
     }
     
     .signature-name {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
     
+    /* Christmas Section */
+    .timeline-week.christmas {
+        padding: var(--space-md);
+        margin-top: var(--space-lg);
+    }
+    
+    /* Gallery */
     .gallery-masonry {
         grid-template-columns: 1fr;
         grid-auto-rows: auto;
+        gap: var(--space-md);
     }
     
     .gallery-item {
         aspect-ratio: 4/3;
+        border-radius: 8px;
     }
     
     .gallery-item.size-large,
@@ -1686,74 +1874,192 @@ a:focus-visible {
     
     .gallery-item figcaption {
         transform: translateY(0);
-        background: rgba(0, 0, 0, 0.7);
+        background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, 0.85) 100%);
+        padding: var(--space-md);
     }
     
+    .caption-title {
+        font-size: 1.1rem;
+    }
+    
+    .caption-desc {
+        font-size: 0.8rem;
+    }
+    
+    /* Family */
     .family-showcase {
         grid-template-columns: repeat(2, 1fr);
         gap: var(--space-md);
     }
     
     .member-image {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
+        margin-bottom: var(--space-sm);
     }
     
     .member-name {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
     
     .member-role {
+        font-size: 0.65rem;
+        letter-spacing: 0.1em;
+    }
+    
+    /* Final Message */
+    .final-message {
+        min-height: auto;
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .message-ornament svg {
+        width: 100px;
+    }
+    
+    .message-body {
+        padding: var(--space-md) 0;
+    }
+    
+    .message-pretext {
+        font-size: 0.75rem;
+    }
+    
+    .message-headline {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+    
+    .message-text {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+    
+    .sig-family {
+        font-size: 2rem;
+    }
+    
+    /* Footer */
+    .premium-footer {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .brand-script {
+        font-size: 2.2rem;
+    }
+    
+    .brand-year {
         font-size: 0.7rem;
     }
     
-    .final-message {
-        min-height: 60vh;
+    .footer-tagline {
+        font-size: 0.8rem;
     }
     
-    .message-title {
-        font-size: 2rem;
+    /* Music Toggle */
+    .music-toggle {
+        width: 50px;
+        height: 50px;
+        bottom: 1.5rem;
+        right: 1.5rem;
+    }
+    
+    .music-bars {
+        height: 16px;
+        gap: 2px;
+    }
+    
+    .music-bars span {
+        width: 2px;
     }
 }
 
-/* Mobile - Celulares */
+/* Mobile - Celulares pequenos */
 @media (max-width: 480px) {
     :root {
+        --space-sm: 0.5rem;
         --space-md: 1rem;
         --space-lg: 1.5rem;
         --space-xl: 2rem;
     }
     
     html {
-        font-size: 13px;
+        font-size: 14px;
     }
     
-    .intro-screen-content h1 {
-        font-size: 2rem;
+    /* Intro */
+    .intro-content {
+        padding: 1rem;
     }
     
-    .intro-family-name {
+    .intro-date .day {
+        font-size: 3.5rem;
+    }
+    
+    .date-details .month {
+        font-size: 0.85rem;
+    }
+    
+    .date-details .year {
         font-size: 1.2rem;
     }
     
-    .hero-headline {
-        font-size: 2rem;
+    .intro-divider .line {
+        width: 50px;
     }
     
-    .hero-subtitle {
+    .intro-title .pre-title {
+        font-size: 0.8rem;
+    }
+    
+    .intro-title .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-family {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    
+    .enter-btn {
+        padding: 0.75rem 1.5rem;
+        font-size: 0.75rem;
+    }
+    
+    .scroll-indicator {
+        bottom: 1.5rem;
+    }
+    
+    .mouse {
+        width: 22px;
+        height: 34px;
+    }
+    
+    /* Hero */
+    .hero-headline {
+        font-size: 1.8rem;
+    }
+    
+    .hero-description {
         font-size: 0.9rem;
     }
     
-    .section-title-main {
+    .stat-value {
         font-size: 2rem;
     }
     
-    .section-description {
-        font-size: 0.95rem;
+    /* Section */
+    .section-title-main {
+        font-size: 1.8rem;
     }
     
-    .moment-content {
-        padding: var(--space-sm);
+    .section-description {
+        font-size: 0.9rem;
+    }
+    
+    /* Timeline */
+    .week-label {
+        font-size: 1.1rem;
     }
     
     .moment-title {
@@ -1764,26 +2070,9 @@ a:focus-visible {
         font-size: 0.85rem;
     }
     
-    .christmas-day {
-        min-height: 80vh;
-    }
-    
-    .christmas-badge {
-        top: var(--space-sm);
-        right: var(--space-sm);
-        padding: 0.5rem 1rem;
-    }
-    
-    .christmas-title {
-        font-size: 1.5rem;
-    }
-    
-    .christmas-description {
-        font-size: 0.9rem;
-    }
-    
+    /* Christmas Eve */
     .eve-day {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     
     .eve-title {
@@ -1791,7 +2080,156 @@ a:focus-visible {
     }
     
     .eve-description {
+        font-size: 0.85rem;
+    }
+    
+    /* Christmas Day */
+    .christmas-day {
+        min-height: 400px;
+    }
+    
+    .christmas-title {
+        font-size: 1.4rem;
+    }
+    
+    .christmas-description {
+        font-size: 0.85rem;
+    }
+    
+    .signature-name {
+        font-size: 1.4rem;
+    }
+    
+    /* Family */
+    .family-showcase {
+        grid-template-columns: 1fr 1fr;
+        gap: var(--space-sm);
+    }
+    
+    .family-member {
+        padding: var(--space-sm);
+    }
+    
+    .member-image {
+        width: 80px;
+        height: 80px;
+        border-width: 2px;
+        padding: 3px;
+    }
+    
+    .member-name {
         font-size: 0.9rem;
+    }
+    
+    .member-role {
+        font-size: 0.6rem;
+    }
+    
+    /* Gallery */
+    .gallery-masonry {
+        gap: var(--space-sm);
+        padding: 0 var(--space-sm);
+    }
+    
+    .gallery-item {
+        border-radius: 6px;
+    }
+    
+    .gallery-item figcaption {
+        padding: var(--space-sm);
+    }
+    
+    .caption-title {
+        font-size: 1rem;
+    }
+    
+    .caption-desc {
+        font-size: 0.75rem;
+    }
+    
+    /* Final Message */
+    .message-headline {
+        font-size: 1.4rem;
+    }
+    
+    .message-text {
+        font-size: 0.85rem;
+    }
+    
+    .sig-family {
+        font-size: 1.6rem;
+    }
+    
+    /* Footer */
+    .brand-script {
+        font-size: 1.8rem;
+    }
+    
+    /* Music */
+    .music-toggle {
+        width: 45px;
+        height: 45px;
+        bottom: 1rem;
+        right: 1rem;
+    }
+    
+    /* Hide cursor on touch */
+    .cursor-dot,
+    .cursor-outline {
+        display: none !important;
+    }
+    
+    /* Lightbox */
+    .lightbox-close {
+        top: 1rem;
+        right: 1rem;
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-close svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .lightbox-nav {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .lightbox-nav.prev { left: 0.5rem; }
+    .lightbox-nav.next { right: 0.5rem; }
+    
+    .lightbox-nav svg {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .intro-date .day {
+        font-size: 3rem;
+    }
+    
+    .intro-title .main-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-headline {
+        font-size: 1.5rem;
+    }
+    
+    .section-title-main {
+        font-size: 1.5rem;
+    }
+    
+    .christmas-title {
+        font-size: 1.2rem;
     }
     
     .family-showcase {
@@ -1802,40 +2240,46 @@ a:focus-visible {
         width: 100px;
         height: 100px;
     }
-    
-    .timeline-week.christmas {
-        padding: var(--space-md);
-        margin-top: var(--space-lg);
-    }
-    
-    /* Music control mobile */
-    .music-control {
-        bottom: 15px;
-        right: 15px;
-        width: 45px;
-        height: 45px;
-    }
-    
-    /* Hide custom cursor on mobile */
-    .cursor-dot,
-    .cursor-ring {
-        display: none;
-    }
 }
 
 /* Landscape mobile */
-@media (max-width: 768px) and (orientation: landscape) {
-    .hero-section {
+@media (max-width: 900px) and (orientation: landscape) {
+    .intro-screen {
+        padding: var(--space-md);
+    }
+    
+    .intro-date .day {
+        font-size: 3rem;
+    }
+    
+    .intro-title .main-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-family {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    .hero-cinematic {
         min-height: auto;
-        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .hero-inner {
+        min-height: auto;
+        padding: var(--space-lg);
     }
     
     .christmas-day {
-        min-height: 100vh;
+        min-height: 80vh;
     }
     
     .final-message {
         min-height: auto;
-        padding: var(--space-lg);
+        padding: var(--space-md);
     }
 }
