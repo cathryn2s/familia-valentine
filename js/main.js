@@ -304,4 +304,42 @@ document.addEventListener('DOMContentLoaded', () => {
         img.src = src;
     });
 
+    // ─────────────────────────────────────────
+    // ROTATE SCREEN DETECTION
+    // ─────────────────────────────────────────
+    const rotateOverlay = document.getElementById('rotateOverlay');
+    
+    function checkOrientation() {
+        const isMobile = window.innerWidth <= 900;
+        const isPortrait = window.innerHeight > window.innerWidth;
+        
+        if (rotateOverlay) {
+            if (isMobile && isPortrait) {
+                rotateOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            } else {
+                rotateOverlay.classList.remove('active');
+                // Só restaura scroll se intro já foi passada
+                if (introScreen && introScreen.classList.contains('hidden')) {
+                    document.body.style.overflow = 'auto';
+                }
+            }
+        }
+    }
+    
+    // Verificar orientação ao carregar
+    checkOrientation();
+    
+    // Verificar constantemente (a cada 500ms)
+    setInterval(checkOrientation, 500);
+    
+    // Verificar também nos eventos de mudança
+    window.addEventListener('resize', checkOrientation);
+    window.addEventListener('orientationchange', checkOrientation);
+    
+    // Screen orientation API (se disponível)
+    if (screen.orientation) {
+        screen.orientation.addEventListener('change', checkOrientation);
+    }
+
 });
