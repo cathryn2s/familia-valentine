@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dezembro 2025 | Família Valentine Cassemiro</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Josefin+Sans:wght@200;300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Controle de Música -->
+    <button class="music-toggle" id="musicToggle" aria-label="Controle de música">
+        <div class="music-bars">
+            <span></span><span></span><span></span><span></span>
+        </div>
+    </button>
+    <audio id="bgMusic" loop preload="auto">
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Navegação -->
+    <nav class="main-nav" id="mainNav">
+        <div class="nav-brand">V<span class="gold">C</span></div>
+        <ul class="nav-links">
+            <li><a href="#intro">Início</a></li>
+            <li><a href="#moments">Momentos</a></li>
+            <li><a href="#gallery">Galeria</a></li>
+            <li><a href="#familia">Família</a></li>
+        </ul>
+    </nav>
+
+    <!-- Tela de Entrada Cinematográfica -->
+    <section class="intro-screen" id="introScreen">
+        <div class="intro-bg">
+            <div class="noise-overlay"></div>
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="intro-content">
+            <div class="intro-date">
+                <span class="day">25</span>
+                <div class="date-details">
+                    <span class="month">Dezembro</span>
+                    <span class="year">2025</span>
+                </div>
+            </div>
+            <div class="intro-divider">
+                <span class="line"></span>
+                <span class="diamond">◆</span>
+                <span class="line"></span>
+            </div>
+            <h1 class="intro-title">
+                <span class="pre-title">Os últimos dias de</span>
+                <span class="main-title">Um Ano Extraordinário</span>
+            </h1>
+            <p class="intro-family">Família Valentine Cassemiro</p>
+            <button class="enter-btn" id="enterBtn">
+                <span>Reviver Memórias</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </button>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Principal -->
+    <main class="main-content" id="mainContent">
+        
+        <!-- Hero Cinematic -->
+        <section class="hero-cinematic" id="intro">
+            <div class="hero-video-bg">
+                <div class="hero-img-bg"></div>
+                <div class="hero-overlay-gradient"></div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-text-wrapper">
+                    <span class="hero-eyebrow">Dezembro 2025</span>
+                    <h2 class="hero-headline">
+                        <span class="line">Momentos que</span>
+                        <span class="line accent">nos Definem</span>
+                    </h2>
+                    <p class="hero-description">
+                        Vinte e cinco dias de dezembro. Vinte e cinco razões para celebrar 
+                        o amor que nos une. Esta é a nossa história.
+                    </p>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">25</span>
+                        <span class="stat-label">Dias Mágicos</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">∞</span>
+                        <span class="stat-label">Memórias</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Família</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline da Semana do Natal -->
+        <section class="december-timeline" id="moments">
+            <div class="section-intro">
+                <span class="section-number">01</span>
+                <h2 class="section-title-main">
+                    <span class="title-light">A Semana do</span>
+                    <span class="title-bold">Natal</span>
+                </h2>
+                <p class="section-description">
+                    Os últimos dias antes da celebração mais especial do ano.
+                    Momentos únicos que ficarão eternizados em nossos corações.
+                </p>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Semana do Natal: Dias 23-25 -->
+                <div class="timeline-week christmas" data-week="1">
+                    <div class="week-header christmas-header">
+                        <span class="week-label">A Semana do Natal</span>
+                        <span class="week-dates">23 — 25 Dezembro</span>
+                    </div>
+                    
+                    <div class="christmas-section">
+                        <!-- Dia 23 -->
+                        <div class="pre-christmas">
+                            <article class="moment-card horizontal">
+                                <div class="moment-media">
+                                    <img src="images/momentos/dia1.png" alt="Dia 23">
+                                    <div class="moment-date-badge">
+                                        <span class="badge-day">23</span>
+                                        <span class="badge-month">DEZ</span>
+                                    </div>
+                                </div>
+                                <div class="moment-content">
+                                    <span class="moment-tag">Preparação</span>
+                                    <h3 class="moment-title">Contagem Regressiva</h3>
+                                    <p class="moment-description">A ansiedade aumenta enquanto nos preparamos para a grande celebração.</p>
+                                </div>
+                            </article>
+                        </div>
+
+                        <!-- Véspera de Natal -->
+                        <article class="christmas-eve">
+                            <div class="christmas-eve-media">
+                                <img src="images/momentos/dia2.png" alt="Véspera de Natal">
+                                <div class="media-overlay"></div>
+                            </div>
+                            <div class="christmas-eve-content">
+                                <div class="eve-date">
+                                    <span class="eve-day">24</span>
+                                    <span class="eve-label">Véspera de Natal</span>
+                                </div>
+                                <h3 class="eve-title">A Noite Mais Esperada</h3>
+                                <p class="eve-description">
+                                    A família reunida, a ceia preparada com carinho, 
+                                    as risadas e o amor que preenche cada canto do lar.
+                                </p>
+                            </div>
+                        </article>
+
+                        <!-- Dia de Natal - Grande Destaque -->
+                        <article class="christmas-day">
+                            <div class="christmas-badge">
+                                <span class="badge-icon">★</span>
+                                <span class="badge-text">25 de Dezembro</span>
+                            </div>
+                            <div class="christmas-media">
+                                <img src="images/momentos/dia3.png" alt="Natal em Família">
+                                <div class="christmas-overlay"></div>
+                            </div>
+                            <div class="christmas-content">
+                                <span class="christmas-label">Natal 2025</span>
+                                <h3 class="christmas-title">Feliz Natal, Família Valentine Cassemiro</h3>
+                                <p class="christmas-description">
+                                    O momento mais aguardado do ano. A celebração do amor, 
+                                    da fé e da união que nos faz ser quem somos.
+                                </p>
+                                <div class="christmas-signature">
+                                    <span class="signature-text">Com amor,</span>
+                                    <span class="signature-name">Nossa Família</span>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria Imersiva -->
+        <section class="immersive-gallery" id="gallery">
+            <div class="section-intro dark">
+                <span class="section-number">02</span>
+                <h2 class="section-title-main">
+                    <span class="title-light">Galeria de</span>
+                    <span class="title-bold">Memórias</span>
+                </h2>
+                <p class="section-description">
+                    Os frames que contam nossa história. Cada imagem, um sentimento eterno.
+                </p>
+            </div>
+
+            <div class="gallery-masonry">
+                <figure class="gallery-item size-large">
+                    <img src="images/memorias/memoria1.png" alt="Os Chopeiros segurando os barris">
+                    <figcaption>
+                        <span class="caption-title">Os Chopeiros</span>
+                        <span class="caption-desc">Segurando os barris com orgulho</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item size-large">
+                    <img src="images/memorias/memoria2.png" alt="Terceiro Picnic da Família">
+                    <figcaption>
+                        <span class="caption-title">3º Picnic da Família</span>
+                        <span class="caption-desc">Momentos de união e alegria</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item size-large">
+                    <img src="images/memorias/memoria3.png" alt="Ceia de Natal 2025">
+                    <figcaption>
+                        <span class="caption-title">Ceia de Natal 2025</span>
+                        <span class="caption-desc">A celebração mais especial do ano</span>
+                    </figcaption>
+                </figure>
+                <figure class="gallery-item size-large memorial">
+                    <img src="images/memorias/memoria4.png" alt="Memorial do Tiago">
+                    <figcaption>
+                        <span class="caption-title">Em Memória de Tiago</span>
+                        <span class="caption-desc">Nosso eterno amigo, agora aposentado ❤️</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Seção Família -->
+        <section class="family-section" id="familia">
+            <div class="family-bg-pattern"></div>
+            <div class="section-intro">
+                <span class="section-number">03</span>
+                <h2 class="section-title-main">
+                    <span class="title-light">Nossa</span>
+                    <span class="title-bold">Família</span>
+                </h2>
+                <p class="section-description">
+                    Os rostos por trás de cada sorriso. O amor que construímos juntos.
+                </p>
+            </div>
+
+            <div class="family-showcase">
+                <article class="family-member">
+                    <div class="member-image">
+                        <img src="images/chopeiros.jpg" alt="Os Chopeiros">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Os Chopeiros</h3>
+                        <span class="member-role">🍺 Sempre levam o chop/cerveja</span>
+                    </div>
+                </article>
+                <article class="family-member">
+                    <div class="member-image">
+                        <img src="images/tiago.jpg" alt="Tiago de Freitas Valentin">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Tiago de Freitas Valentin</h3>
+                        <span class="member-role">🔪 Fatiador de Crianças (aposentado)</span>
+                    </div>
+                </article>
+                <article class="family-member">
+                    <div class="member-image">
+                        <img src="images/renata.jpg" alt="Renata Zampier">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Renata Zampier</h3>
+                        <span class="member-role">📋 Organizadora oficial dos eventos</span>
+                    </div>
+                </article>
+                <article class="family-member">
+                    <div class="member-image">
+                        <img src="images/galera-lavras.jpg" alt="Galera de Lavras">
+                    </div>
+                    <div class="member-details">
+                        <h3 class="member-name">Galera de Lavras</h3>
+                        <span class="member-role">🥩 Churrasco excelente que compensa</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Mensagem Final -->
+        <section class="final-message">
+            <div class="message-bg">
+                <img src="images/chopeiros.jpg" alt="">
+                <div class="message-overlay"></div>
+            </div>
+            <div class="message-wrapper">
+                <div class="message-ornament top">
+                    <svg viewBox="0 0 100 20"><path d="M0,10 Q25,0 50,10 T100,10" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                </div>
+                <div class="message-body">
+                    <span class="message-pretext">Para nossa amada família</span>
+                    <h2 class="message-headline">Que a luz deste Natal ilumine nossos caminhos em 2026</h2>
+                    <p class="message-text">
+                        Dezembro de 2025 ficará para sempre em nossos corações. 
+                        Cada momento vivido, cada abraço compartilhado, cada risada ecoando 
+                        pelos corredores de nossa casa — tudo isso compõe a sinfonia do nosso amor.
+                    </p>
+                    <p class="message-text">
+                        Que o novo ano traga ainda mais motivos para celebrarmos juntos, 
+                        mais memórias para construirmos e mais amor para compartilharmos.
+                    </p>
+                    <div class="message-signature">
+                        <span class="sig-line"></span>
+                        <span class="sig-text">Com todo nosso amor</span>
+                        <span class="sig-family">Família Valentine Cassemiro</span>
+                    </div>
+                </div>
+                <div class="message-ornament bottom">
+                    <svg viewBox="0 0 100 20"><path d="M0,10 Q25,20 50,10 T100,10" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Premium -->
+        <footer class="premium-footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="brand-script">Valentine Cassemiro</span>
+                    <span class="brand-year">Dezembro 2025</span>
+                </div>
+                <div class="footer-divider">
+                    <span></span>
+                    <span class="diamond">◆</span>
+                    <span></span>
+                </div>
+                <p class="footer-tagline">Memórias que duram para sempre</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="Fechar">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M18 6L6 18M6 6l12 12"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav prev" aria-label="Anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M15 18l-6-6 6-6"/>
+            </svg>
+        </button>
+        <button class="lightbox-nav next" aria-label="Próximo">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M9 18l6-6-6-6"/>
+            </svg>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightboxImg">
+            <div class="lightbox-caption">
+                <span class="lb-title"></span>
+                <span class="lb-desc"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
