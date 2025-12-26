@@ -1570,3 +1570,272 @@ a:focus-visible {
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ─────────────────────────────────────────
+   RESPONSIVE - MOBILE FIRST IMPROVEMENTS
+   ───────────────────────────────────────── */
+
+/* Tablets e telas menores que 1024px */
+@media (max-width: 1024px) {
+    :root {
+        --space-xl: 4rem;
+        --space-2xl: 6rem;
+    }
+    
+    .christmas-day {
+        min-height: 60vh;
+    }
+}
+
+/* Mobile - Tablets pequenos e celulares grandes */
+@media (max-width: 768px) {
+    :root {
+        --space-lg: 2rem;
+        --space-xl: 3rem;
+    }
+    
+    html {
+        font-size: 14px;
+    }
+    
+    .intro-screen-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .intro-family-name {
+        font-size: 1.5rem;
+    }
+    
+    .week-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .week-label {
+        font-size: 1.2rem;
+    }
+    
+    .week-dates {
+        font-size: 0.8rem;
+    }
+    
+    .pre-christmas {
+        grid-template-columns: 1fr;
+    }
+    
+    .moment-card.horizontal {
+        grid-template-columns: 1fr;
+    }
+    
+    .moment-card.horizontal .moment-media {
+        aspect-ratio: 16/9;
+    }
+    
+    .christmas-eve {
+        grid-template-columns: 1fr;
+    }
+    
+    .christmas-eve-media {
+        aspect-ratio: 16/9;
+    }
+    
+    .christmas-eve-content {
+        padding: var(--space-md);
+    }
+    
+    .eve-day {
+        font-size: 2.5rem;
+    }
+    
+    .eve-title {
+        font-size: 1.5rem;
+    }
+    
+    .christmas-day {
+        min-height: 70vh;
+    }
+    
+    .christmas-title {
+        font-size: 1.8rem;
+    }
+    
+    .christmas-content {
+        padding: var(--space-lg);
+    }
+    
+    .signature-name {
+        font-size: 1.5rem;
+    }
+    
+    .gallery-masonry {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    .gallery-item {
+        aspect-ratio: 4/3;
+    }
+    
+    .gallery-item.size-large,
+    .gallery-item.size-wide,
+    .gallery-item.size-tall {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
+    
+    .gallery-item figcaption {
+        transform: translateY(0);
+        background: rgba(0, 0, 0, 0.7);
+    }
+    
+    .family-showcase {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-md);
+    }
+    
+    .member-image {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .member-name {
+        font-size: 1.1rem;
+    }
+    
+    .member-role {
+        font-size: 0.7rem;
+    }
+    
+    .final-message {
+        min-height: 60vh;
+    }
+    
+    .message-title {
+        font-size: 2rem;
+    }
+}
+
+/* Mobile - Celulares */
+@media (max-width: 480px) {
+    :root {
+        --space-md: 1rem;
+        --space-lg: 1.5rem;
+        --space-xl: 2rem;
+    }
+    
+    html {
+        font-size: 13px;
+    }
+    
+    .intro-screen-content h1 {
+        font-size: 2rem;
+    }
+    
+    .intro-family-name {
+        font-size: 1.2rem;
+    }
+    
+    .hero-headline {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .section-title-main {
+        font-size: 2rem;
+    }
+    
+    .section-description {
+        font-size: 0.95rem;
+    }
+    
+    .moment-content {
+        padding: var(--space-sm);
+    }
+    
+    .moment-title {
+        font-size: 1.1rem;
+    }
+    
+    .moment-description {
+        font-size: 0.85rem;
+    }
+    
+    .christmas-day {
+        min-height: 80vh;
+    }
+    
+    .christmas-badge {
+        top: var(--space-sm);
+        right: var(--space-sm);
+        padding: 0.5rem 1rem;
+    }
+    
+    .christmas-title {
+        font-size: 1.5rem;
+    }
+    
+    .christmas-description {
+        font-size: 0.9rem;
+    }
+    
+    .eve-day {
+        font-size: 2rem;
+    }
+    
+    .eve-title {
+        font-size: 1.2rem;
+    }
+    
+    .eve-description {
+        font-size: 0.9rem;
+    }
+    
+    .family-showcase {
+        grid-template-columns: 1fr;
+    }
+    
+    .member-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .timeline-week.christmas {
+        padding: var(--space-md);
+        margin-top: var(--space-lg);
+    }
+    
+    /* Music control mobile */
+    .music-control {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+    
+    /* Hide custom cursor on mobile */
+    .cursor-dot,
+    .cursor-ring {
+        display: none;
+    }
+}
+
+/* Landscape mobile */
+@media (max-width: 768px) and (orientation: landscape) {
+    .hero-section {
+        min-height: auto;
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .christmas-day {
+        min-height: 100vh;
+    }
+    
+    .final-message {
+        min-height: auto;
+        padding: var(--space-lg);
+    }
+}
