@@ -11,6 +11,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <!-- Aviso para girar a tela -->
+    <div class="rotate-screen-overlay" id="rotateOverlay">
+        <div class="rotate-content">
+            <div class="rotate-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="4" y="2" width="16" height="20" rx="2" />
+                    <line x1="12" y1="18" x2="12" y2="18.01" stroke-width="2" stroke-linecap="round" />
+                </svg>
+                <div class="rotate-arrow">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4v5h5" />
+                        <path d="M20 20v-5h-5" />
+                        <path d="M4 9a9 9 0 0 1 15.36-4.36" />
+                        <path d="M20 15a9 9 0 0 1-15.36 4.36" />
+                    </svg>
+                </div>
+            </div>
+            <h2 class="rotate-title">Gire seu dispositivo</h2>
+            <p class="rotate-text">Para uma melhor experiência, por favor gire seu celular para o modo paisagem</p>
+            <div class="rotate-hint">
+                <span class="hint-icon">📱</span>
+                <span class="hint-arrow">→</span>
+                <span class="hint-icon rotated">📱</span>
+            </div>
+        </div>
+    </div>
+
     <!-- Cursor personalizado -->
     <div class="cursor-dot"></div>
     <div class="cursor-outline"></div>
